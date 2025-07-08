@@ -1,3 +1,16 @@
+@keyframes gradient-animation {
+  0% { background: linear-gradient(90deg, #3498db, #8e44ad); } 
+  25% { background: linear-gradient(90deg, #2ecc71, #f1c40f); } 
+  50% { background: linear-gradient(90deg, #e74c3c, #c0392b); } 
+  75% { background: linear-gradient(90deg, #9b59b6, #34495e); } 
+  100% { background: linear-gradient(90deg, #3498db, #8e44ad); } 
+}
+
+body {
+  animation: gradient-animation 11s infinite alternate ease-in-out;
+  background-size: 200% 200%; 
+}
+
 @keyframes rotate-face {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(10deg); } 
