@@ -1,0 +1,91 @@
+@keyframes rotate-face {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(10deg); } 
+}
+
+.robot-face-shape:hover {
+  animation: rotate-face 2s infinite alternate ease-in-out;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.robot-eye-left {
+  animation: blink 3s infinite;
+}
+
+@keyframes pulse-nose {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+.robot-nose:hover {
+  animation: pulse-nose 1s infinite alternate;
+}
+
+@keyframes float-robot {
+  0% { top: 100px; }
+  50% { top: 90px; }
+  100% { top: 100px; }
+}
+
+.robot-container {
+  animation: float-robot 4s infinite ease-in-out;
+}
+
+.robot-tooth {
+  transition: all 0.3s ease-in-out;
+}
+
+.robot-tooth:hover {
+  background-color: #f1c40f; 
+  transform: translateY(-5px) scale(1.1); 
+}
+
+@keyframes color-change-eye {
+  0% { background-color: #e74c3c; }
+  25% { background-color: #3498db; }
+  50% { background-color: #2ecc71; }
+  75% { background-color: #9b59b6; }
+  100% { background-color: #e74c3c; }
+}
+
+.robot-eye-right {
+  animation: color-change-eye 8s infinite linear;
+}
+
+
+@keyframes left-ear {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(-20deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.robot-ear-left {
+  animation: left-ear 2s infinite linear;
+}
+
+@keyframes right-ear {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(20deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes wiggle-hair {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.robot-hair-one,
+.robot-hair-two,
+.robot-hair-three {
+  animation: wiggle-hair 1.5s infinite alternate ease-in-out;
+}
+
+.robot-hair-one:nth-child(1) { animation-delay: 0s; }
+.robot-hair-two:nth-child(2) { animation-delay: 0.1s; }
+.robot-hair-three:nth-child(3) { animation-delay: 0.2s; }
+.robot-hair-two:nth-child(4) { animation-delay: 0.1s; } 
+.robot-hair-one:nth-child(5) { animation-delay: 0s; } 
